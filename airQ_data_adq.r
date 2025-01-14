@@ -25,6 +25,7 @@ descargar_datos_estacion <- function(codigo_estacion) {
         message(paste("Sin datos para la estación:", codigo_estacion))
         return(NULL)
       }
+      data$station_code <- codigo_estacion  # Agregar el código de la estación
       message(paste("Datos descargados para la estación:", codigo_estacion))
       return(data)
     },
